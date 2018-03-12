@@ -56,7 +56,7 @@ p {
 
 .bg-img {
   position:absolute;
-  background:url('/img/image1-slide.jpg');
+  background:url('../img/image1-slide.jpg');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
