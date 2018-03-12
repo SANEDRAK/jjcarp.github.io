@@ -1,0 +1,201 @@
+/* Core Sytles */
+
+body {
+  margin:0;
+  font-family:arial,helvetica,sans-serif;
+  background:#333;
+  color:#fff;
+  font-size:1.1em;
+  text-align:center;
+  line-height: 1.4;
+}
+
+img {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+h1, h2, h3 {
+  margin:0;
+  padding:1em 0;
+}
+
+p {
+  margin:0;
+  padding:1em 0;
+}
+
+.btn {
+  background:#2690d4;
+  color:#fff;
+  text-decoration:none;
+  padding:1em 2em;
+  border:1px solid #fff;
+  display:inline-block;
+  margin:.5 0;
+
+}
+
+.btn:hover {
+  color:#333;
+  background:#eaeaea;
+  border-color:#2690d4;
+}
+
+/* Header Showcase */
+#showcase {
+  min-height:450px;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+
+}
+
+.bg-img {
+  position:absolute;
+  background:url('/img/image1-slide.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  width:100%;
+  height:450px;
+  z-index:-1;
+  opacity: .4;
+
+}
+
+.style {
+  font-size:2em;
+  color:#eaeaea;
+}
+.style:hover {
+  color: #e27d5f;
+}
+
+#showcase a {
+  padding:1em 2em;
+  color:#fff;
+  text-decoration: none;
+  border:1px solid #fff;
+}
+
+#showcase a:hover {
+  font-weight:600;
+}
+
+
+/* Section a */
+#showcase .content-wrap {
+  padding:0 1.5em;
+}
+
+#section-a {
+  background:#eaeaea;
+  color:#333;
+  padding-bottom:2em;
+}
+
+
+
+/* Section b */
+
+#section-b {
+  background:#333;
+}
+
+#section-b {
+  padding:2em 1em;
+}
+
+#section-b ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+
+}
+
+#section-b li {
+  color:#333;
+  background-color:#fff;
+  margin-bottom:1em;
+
+}
+
+.card-content {
+  padding:1.5em;
+}
+
+
+/* Section C */
+
+#section-c {
+  background:#fff;
+  color:#333;
+  padding:2em;
+}
+
+
+/* Section D */
+
+#section-d .box {
+  padding:2em;
+  color:#fff;
+}
+
+#section-d .box:first-child {
+  background:#2690d4;
+}
+
+
+#main-footer {
+  padding:2em;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+#main-footer a {
+  text-decoration: none;
+  color:#2690d4;
+}
+
+#main-footer a:hover {
+  color:#fff;
+}
+
+
+/* Media Queries */
+
+@media (min-width:700px) {
+
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(4,minmax(auto,25em));
+  }
+
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+
+
+  .box, #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display:flex;
+    justify-content:space-around;
+  }
+
+
+  #section-b li {
+    width:31%;
+  }
+}
+
+/* Contact Form */
